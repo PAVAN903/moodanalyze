@@ -10,7 +10,7 @@ public class Main {
 		System.out.println("enter your mood");
 		String mood=sc.nextLine();
 		String moodCase=mood.toUpperCase();
-		System.out.println(moodAnalyzer.Moodanalyze(moodCase));
+		System.out.println(moodAnalyzer.analyzerMood(moodCase));
 
 	}
 

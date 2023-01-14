@@ -1,24 +1,18 @@
 package com.mood;
 
 public class MoodAnalyzer {
-	
-	private String mood;
-
-	
-	MoodAnalyzer(){}
+	String analyzerMood(String mood) {
 		
-		
-   MoodAnalyzer(String mood){
-	   this.mood=mood;
-   }
-    String Moodanalyze(String moodCase) {
-	
-      if (mood.contains("SAD"))
+		if (mood.contains("SAD"))
 			return "SAD";
-		
-		else
-			return "HAPPY";
-	}
-	}
+		try {
+			if (mood.contains("SAD"))
+				return "SAD";
+			else
+				return "HAPPY";
+		}catch(NullPointerException e) {
+		   return "HAPPY";
+	}}}
+	
 
 
