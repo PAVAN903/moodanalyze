@@ -1,18 +1,18 @@
 package com.mood;
 
 public class MoodAnalyzer {
-	String analyzerMood(String mood) {
+	String analyzerMood(String mood)throws CustomException {
 		
-		if (mood.contains("SAD"))
-			return "SAD";
-		try {
-			if (mood.contains("SAD"))
-				return "SAD";
-			else
-				return "HAPPY";
-		}catch(NullPointerException e) {
-		   return "HAPPY";
-	}}}
+		if (mood.contains("SAD")) {
+            return "SAD";
+	}
+		else {
+
+		}
+		return mood;}}
+	
+		
+			
 	
 
 

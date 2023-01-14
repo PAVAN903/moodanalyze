@@ -7,11 +7,11 @@ import org.junit.jupiter.api.Test;
 class MoodAnalyzerTest {
 
 	@Test
-	void test() {
+	void test() throws CustomException {
 		MoodAnalyzer moodAnalyzer=new MoodAnalyzer();
-		String mood="NULL";
+		String mood="HAPPY";
 		String actual=moodAnalyzer.analyzerMood(mood);
-		assertEquals("SAD",actual);
+		assertEquals("NULL",actual);
 	}
 
 }
